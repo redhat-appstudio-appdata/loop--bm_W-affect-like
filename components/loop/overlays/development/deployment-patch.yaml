@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: loop
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/jboyer-tenant/loop/loop@sha256:1179f622f8f4130b599a28921c26b5b06d6342f6afe76d570ba359211abe5049
+        name: container-image
+        resources: {}
+status: {}
